@@ -6,7 +6,7 @@ class Produk
   public $judul = "judul",
     $penulis = 'Penulis',
     $penerbit  = "Penerbit",
-    $harga = "Harga";
+    $harga = 0;
 
   public function getLabel()
   {
