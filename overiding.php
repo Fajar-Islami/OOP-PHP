@@ -49,14 +49,14 @@ class Komik extends Produk
       $judul,
       $penulis,
       $penerbit,
-      $harga = 0
+      $harga
     );
     $this->jmlHalaman = $jmlHalaman;
   }
 
   public function getInfoProduk()
   {
-    $str = "Komik : " . parent::getInfoProduk() . "- {$this->jmlHalaman} Halaman"; //overiding parent::
+    $str = "Komik : " . parent::getInfoProduk() . " - {$this->jmlHalaman} Halaman"; //overiding parent::
     return $str;
   }
 }
@@ -97,7 +97,7 @@ class CetakInfoProduk
   }
 }
 
-$produk1 = new Komik("Komik", "Fajar", "Jakarta", "10000", 100);
+$produk1 = new Komik("Komik", "Fajar", "Jakarta", "1000", 100);
 $produk2 = new Game("Game", "Fajar", "Sony", "2000", 50);
 
 echo $produk1->getInfoProduk();
