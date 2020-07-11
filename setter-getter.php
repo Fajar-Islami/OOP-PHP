@@ -157,6 +157,7 @@ class CetakInfoProduk
   }
 }
 
+// object
 $produk1 = new Komik("Komik", "Fajar", "Jakarta", "1000", 100);
 $produk2 = new Game("Game", "Fajar", "Sony", "2000", 50);
 
